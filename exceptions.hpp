@@ -18,6 +18,8 @@
  * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
+#pragma once
+
 #include <string>
 
 #include <boost/exception/all.hpp>
