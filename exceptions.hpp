@@ -47,6 +47,13 @@
 
 #endif
 
+/**
+ * @brief Macro for rethrowing an exception.
+ *
+ */
+#define EX3_RETHROW(ExeptInstance) \
+    BOOST_THROW_EXCEPTION(ExeptInstance)
+
 namespace ex3 {
 
 #if !defined(EX3_NO_STACKTRACE)
