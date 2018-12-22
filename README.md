@@ -11,6 +11,10 @@ Please refer to [boost exceptions](https://www.boost.org/doc/libs/1_68_0/libs/ex
 
 This library provides a custom base class for exceptions that inherits `boost::exception` and `std::exception` as well as providing a constructor with a custom message tied to the `what()` virtual method from `std::exception`.
 
+### Requirements
+
+This library requires linking with `-ldl` because of boost stacktrace and, in order to enable stack tracing with function names, it requires compiling with the `-rdynamic` flag, but be advised that `-rdynamic` may affect performance.
+
 ### Namespace
 
 The `exception_base` class and the `traced` typedef used for stacktracing are contained in the `ex3` namespace.
