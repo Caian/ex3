@@ -54,6 +54,13 @@
 #define EX3_RETHROW(ExeptInstance) \
     BOOST_THROW_EXCEPTION(ExeptInstance)
 
+/**
+ * @brief Macro for throwing non-boost exceptions with info.
+ *
+ */
+#define EX3_ENABLE(ExeptInstance) \
+    boost::enable_error_info(ExeptInstance)
+
 namespace ex3 {
 
 #if !defined(EX3_NO_STACKTRACE)
