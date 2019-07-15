@@ -79,20 +79,7 @@ namespace ex3 {
         virtual std::exception,
         virtual boost::exception
     {
-        std::string _message;
-
-        virtual const char* what() const throw()
-        {
-            return _message.c_str();
-        }
-
-        exception_base() :
-            _message()
-        {
-        }
-
-        exception_base(const std::string& message) :
-            _message(message)
+        exception_base()
         {
         }
 
